@@ -1,6 +1,17 @@
 @backend_HostAddress = http://localhost:5170
 
-GET {{backend_HostAddress}}/weatherforecast/
+GET {{backend_HostAddress}}/api/usres
 Accept: application/json
 
-###
+### Pobieranie wszystkich użytkowników
+GET {{backend_HostAddress}}/api/users
+
+### Dodawanie użytkownika
+POST {{backend_HostAddress}}/api/users
+Content-Type: application/json
+
+{
+  "username": "Maja",
+  "email": "maja.wisniewska03@gmail.com",
+  "passwordHash": "testpass"
+}
