@@ -11,7 +11,7 @@ function Home() {
     )
 }
 
-function BackendMessage(){
+function GetUsersList(){
     const [users, setUsers] = React.useState([]);
 
     useEffect(() => {
@@ -39,6 +39,42 @@ function BackendMessage(){
     );
 }
 
+function GetTripsList(){
+    const [trips, setTrips] = React.useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:5170/api/trips')
+        .then(response => {
+            console.log(response.data);
+            setTrips(response.data);
+        })
+        .catch(error => {
+            console.error('Błąd wyświetlania danych:', error);
+        });
+    }, []);
+
+    return (
+        <div>
+            <h1>Lista wycieczek:</h1>
+            <ul>
+                {trips.length > 0 ? (
+                    trips.map((trip) => (
+                        <li key={trip.id}>
+                            {trip.destination}
+                            <br/>
+                            Daty wyjazdu: {new Date(trip.StartDate).toLocaleDateString()} - {new Date(trip.EndDate).toLocaleDateString()}
+                            <br/>
+                            Koszt wyjazdu: {trip.budget} zł
+                        </li>
+                    ))
+                ) : (
+                    <p>Brak dostępnych wycieczek.</p>
+                )}
+            </ul>
+        </div>
+
+    )
+}
 
 function App() {
     return (
@@ -47,14 +83,16 @@ function App() {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/users">List Of Users</Link></li>
+                    <li><Link to="/trips">List Of Trips</Link></li>
                 </ul>
             </nav>
 
-          <Routes>
-          <Route path="/" element={<Home />} />
-              <Route path="/users" element={<BackendMessage />} />
-          </Routes>
-      </Router>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/users" element={<GetUsersList/>}/>
+                <Route path="/trips" element={<GetTripsList/>}/>
+            </Routes>
+        </Router>
   );
 }
 

@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b4f2bdc-1d99-4d75-a43d-72fbb16d7cb7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../backend/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Controllers/UsersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/backend.http" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/backend.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.exe" afterDir="false" />
@@ -72,7 +70,7 @@
       <workItem from="1733182877816" duration="2570000" />
       <workItem from="1733240893172" duration="423000" />
       <workItem from="1733242607589" duration="1590000" />
-      <workItem from="1733250439457" duration="1142000" />
+      <workItem from="1733250439457" duration="4697000" />
     </task>
     <servers />
   </component>
