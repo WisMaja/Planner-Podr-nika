@@ -47,16 +47,24 @@ public class TripsController : ControllerBase
     }
 
 
-    // [HttpGet("{userId}")]
-    // public IActionResult GetTripsByUser(int userId)
-    // {
-    //     var trips = _context.Trips?.ToList();
-    //     if (trips == null || trips.Count == 0)
-    //     {
-    //         return NotFound(new { message = $"Brak wycieczek dla użytkownika o id {userId}." });
-    //     }
-    //     return Ok(trips);
-    // }
+    [HttpGet("user/{userId}")]
+    public IActionResult GetTripsByUserId(int userId)
+    {
+        // Pobieramy wycieczki dla danego użytkownika
+        var trips = _context.Trips?
+            .Where(t => t.UserId == userId) // Filtrujemy po UserId
+            .Include(t => t.User) // Ładujemy dane użytkownika
+            .ToList();
+
+        // Sprawdzamy, czy znaleziono jakieś wycieczki
+        if (trips == null || trips.Count == 0)
+        {
+            return NotFound(new { message = $"Brak wycieczek dla użytkownika o id {userId}." });
+        }
+
+        return Ok(trips); // Zwracamy listę wycieczek
+    }
+
 
 
     // Endpoint: POST /api/trips

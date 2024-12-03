@@ -22,15 +22,22 @@ DELETE https://localhost:5001/api/users/3
 ### Pobieranie wszystkich wycieczek
 GET {{backend_HostAddress}}/api/trips
 
+### Pobieranie wycieczek o id 1
+GET {{backend_HostAddress}}/api/trips/1
+
+### Pobieramy wycieczku użytkownika o id 1
+GET {{backend_HostAddress}}/api/trips/user/1
+
+
 ### Dodawanie wycieczek
 POST {{backend_HostAddress}}/api/trips
 Content-Type: application/json
 
 {
-    "destination": "Rzym",
+    "destination": "Barcelona",
     "startDate": "2024-12-20T00:00:00",
     "endDate": "2024-12-27T00:00:00",
-    "budget": 1600.00,
-    "userId": 1
+    "budget": 2000.00,
+    "userId": 2
 }
 
