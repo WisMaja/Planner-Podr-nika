@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b4f2bdc-1d99-4d75-a43d-72fbb16d7cb7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../backend/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Controllers/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/backend.http" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/backend.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/ref/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/ref/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/refint/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/refint/backend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,30 +30,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2pgLfgvtbM0bcMmr4vBHJexVL5p" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.App.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/wisni/Desktop/STUDY/Planner-Podroznika/frontend/src/main.js",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.App.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/wisni/Desktop/STUDY/Planner-Podroznika/frontend/src/main.js&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -55,6 +70,9 @@
       <option name="presentableId" value="Default" />
       <updated>1733182876577</updated>
       <workItem from="1733182877816" duration="2570000" />
+      <workItem from="1733240893172" duration="423000" />
+      <workItem from="1733242607589" duration="1590000" />
+      <workItem from="1733250439457" duration="1142000" />
     </task>
     <servers />
   </component>

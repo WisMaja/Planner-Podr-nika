@@ -27,4 +27,19 @@ public class UsersController : ControllerBase{
         return Ok(newUser);
     }
 
+//narzie nie działa
+    [HttpDelete("{id}")]
+    public IActionResult DeleteUser(int id)
+    {
+       var user = _context.Users?.Find(id);
+
+       if (user == null)
+            return NotFound(new{ message = $"Uzytkownik o id{id} nie został znaleziony w bazie danych"});
+
+            
+        _context.Users!.Remove(user);
+        _context.SaveChanges();
+        return Ok(new {message = $"Użytkownik o id {id} został pomyślnie usunięty"});
+    }
+
 }

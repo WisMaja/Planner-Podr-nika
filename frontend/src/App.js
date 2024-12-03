@@ -12,36 +12,47 @@ function Home() {
 }
 
 function BackendMessage(){
-    const [message, setMessage] = React.useState('');
+    const [users, setUsers] = React.useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5170/api/hello')
-            .then(response =>  setMessage(response.data) )
-            .catch(error => console.log(error))
+        axios.get('http://localhost:5170/api/users')
+            .then(response => {
+                setUsers(response.data);
+            })
+            .catch(error => {
+                console.error('Error fetching trips:', error);
+            });
     }, []);
 
     return (
         <div>
-            <h1>Message from backend:</h1>
-            <p>{message}</p>
+            <h1>Lista użytkowników:</h1>
+            <ul>
+                {users.map((user) => (
+                    <li key={user.id}>
+                        {user.username} - {user.email}
+                    </li>
+                ))}
+            </ul>
+
         </div>
     );
 }
 
 
 function App() {
-  return (
-      <Router>
-          <nav>
-              <ul>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/message">Backend Message</Link></li>
-              </ul>
-          </nav>
+    return (
+        <Router>
+            <nav>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/users">List Of Users</Link></li>
+                </ul>
+            </nav>
 
           <Routes>
           <Route path="/" element={<Home />} />
-              <Route path="/message" element={<BackendMessage />} />
+              <Route path="/users" element={<BackendMessage />} />
           </Routes>
       </Router>
   );

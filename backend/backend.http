@@ -11,7 +11,10 @@ POST {{backend_HostAddress}}/api/users
 Content-Type: application/json
 
 {
-  "username": "Maja",
-  "email": "maja.wisniewska03@gmail.com",
+  "username": "Kasia",
+  "email": "kasia.mail",
   "passwordHash": "testpass"
 }
+
+### Usuwanie użytkownika
+DELETE https://localhost:5001/api/users/3
