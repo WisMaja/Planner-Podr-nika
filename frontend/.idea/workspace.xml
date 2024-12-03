@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b4f2bdc-1d99-4d75-a43d-72fbb16d7cb7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../backend/Controllers/TripsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Controllers/TripsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/backend.http" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/backend.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/ref/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/ref/backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/refint/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/refint/backend.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GetAllTripsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GetUserList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GetUsersTripList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
@@ -25,6 +16,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -71,7 +69,7 @@
       <workItem from="1733182877816" duration="2570000" />
       <workItem from="1733240893172" duration="423000" />
       <workItem from="1733242607589" duration="1590000" />
-      <workItem from="1733250439457" duration="6758000" />
+      <workItem from="1733250439457" duration="8008000" />
     </task>
     <servers />
   </component>
