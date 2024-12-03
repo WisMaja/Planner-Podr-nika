@@ -1,41 +1,25 @@
-
-
-
-// var builder = WebApplication.CreateBuilder(args);
-
-// // Add services to the container.
-// // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-// builder.Services.AddEndpointsApiExplorer();
-// builder.Services.AddSwaggerGen();
-
-// var app = builder.Build();
-
-// // Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
-//     app.UseSwagger();
-//     app.UseSwaggerUI();
-// }
-
-// app.UseHttpsRedirection();
-
-// app.MapGet("/api/hello", () => Results.Ok(new { Message = "Hello from backend!" }))
-// .WithName("Api")
-// .WithOpenApi();
-
-// app.Run();
-
+//umożliwia korzystanie z Entity Framework Core (EF Core).
+//bez tego AddDbContext i UseSqlServer nie byłyby dostępne.
 using Microsoft.EntityFrameworkCore;
 
-var builder = WebApplication.CreateBuilder(args);
+//worzy obiekt builder, który jest odpowiedzialny za konfigurację aplikacji.
+var builder = WebApplication.CreateBuilder(args); //CreateBuilder inicjalizuje podstawowe usługi aplikacji, takie jak Dependency Injection, rejestrowanie i konfiguracja.
+
 
 // Dodanie AppDbContext z connection string
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//Rejestruje kontrolery w kontenerze Dependency Injection.
+//Bez tej linii aplikacja nie wiedziałaby, że ma obsługiwać kontrolery
 builder.Services.AddControllers();
 
+//Buduje obiekt app, który jest gotową do uruchomienia aplikacją.
 var app = builder.Build();
+//Połączenie wszystkich usług i konfiguracji staje się w tym momencie kompletne.
 
+//Automatycznie mapuje kontrolery na odpowiadające im endpointy API.
 app.MapControllers();
+
+//Uruchamia aplikację i zaczyna nasłuchiwać na określonym porcie
 app.Run();
