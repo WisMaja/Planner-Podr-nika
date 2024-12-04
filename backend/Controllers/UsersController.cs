@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 [ApiController] //Informuje ASP.NET, że klasa jest kontrolerem API.
 [Route("api/[controller]")] //Automatycznie ustawia ścieżkę URL jako api/users (nazwa kontrolera bez "Controller").
 
+
+#region Zapytania o Uzytkownika
 public class UsersController : ControllerBase{
     private readonly AppDbContext _context; //prywatna zmienna
 
@@ -43,3 +45,6 @@ public class UsersController : ControllerBase{
     }
 
 }
+
+#endregion
+

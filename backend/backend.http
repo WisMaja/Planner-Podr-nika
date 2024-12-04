@@ -1,5 +1,6 @@
 @backend_HostAddress = http://localhost:5170
 
+
 GET {{backend_HostAddress}}/api/usres
 Accept: application/json
 
@@ -39,5 +40,14 @@ Content-Type: application/json
     "endDate": "2024-12-27T00:00:00",
     "budget": 2000.00,
     "userId": 2
+}
+
+### sprawdzanie logowania:
+POST {{backend_HostAddress}}/api/login
+Content-Type: application/json
+
+{
+  "username": "Kasia",
+  "passwordHash": "testpass"
 }
 
