@@ -18,7 +18,7 @@ public class LoginController : ControllerBase
         // Znajdź użytkownika w bazie danych
         var user = await _context.Users!.FirstOrDefaultAsync(u => u.Username == request.Username);
 
-        if (user == null || user.PasswordHash != request.PasswordHash)
+        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
         {
             return Unauthorized(new { message = "Invalid username or password ", user?.Username, user?.PasswordHash });
 
@@ -33,5 +33,5 @@ public class LoginController : ControllerBase
 public class LoginRequest
 {
     public string Username { get; set; } = string.Empty;
-    public string PasswordHash { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
 }

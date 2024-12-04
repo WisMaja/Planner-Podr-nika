@@ -34,11 +34,9 @@ POST {{backend_HostAddress}}/api/trips
 Content-Type: application/json
 
 {
-    "destination": "Barcelona",
-    "startDate": "2024-12-20T00:00:00",
-    "endDate": "2024-12-27T00:00:00",
-    "budget": 2000.00,
-    "userId": 2
+  "username": "Kasia",
+  "email": "kasia.mail",
+  "passwordHash": "testpass"
 }
 
 ### sprawdzanie logowania:
@@ -47,6 +45,27 @@ Content-Type: application/json
 
 {
   "username": "Kasia",
-  "passwordhash": "testpass"
+  "password": "testpass"
 }
 
+
+
+### Rejestracja użytkownika
+POST {{backend_HostAddress}}/api/register
+Content-Type: application/json
+
+{
+  "username": "bb",
+  "email": "bb@.mail",
+  "password": "abba"
+}
+
+### Logowanie tego użytkownika
+
+POST {{backend_HostAddress}}/api/login
+Content-Type: application/json
+
+{
+  "username": "bb",
+  "password": "abba"
+}
