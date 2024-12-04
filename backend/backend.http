@@ -18,7 +18,6 @@ Content-Type: application/json
 }
 
 ### Usuwanie użytkownika
-DELETE https://localhost:5001/api/users/3
 
 ### Pobieranie wszystkich wycieczek
 GET {{backend_HostAddress}}/api/trips
@@ -48,6 +47,6 @@ Content-Type: application/json
 
 {
   "username": "Kasia",
-  "passwordHash": "testpass"
+  "passwordhash": "testpass"
 }
 

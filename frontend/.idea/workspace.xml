@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b4f2bdc-1d99-4d75-a43d-72fbb16d7cb7" name="Changes" comment="" />
+    <list default="true" id="4b4f2bdc-1d99-4d75-a43d-72fbb16d7cb7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/bin/Debug/net8.0/backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/backend.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/ref/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/ref/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/refint/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/obj/Debug/net8.0/refint/backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GetAllTripsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GetAllTripsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GetUserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GetUserList.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +83,7 @@
       <workItem from="1733240893172" duration="423000" />
       <workItem from="1733242607589" duration="1590000" />
       <workItem from="1733250439457" duration="8008000" />
+      <workItem from="1733317557483" duration="1558000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 import axios from "axios";
-import Home from "./Home";
 
 function GetUsersList(){
     const [users, setUsers] = React.useState([]);
