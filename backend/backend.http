@@ -55,7 +55,7 @@ POST {{backend_HostAddress}}/api/register
 Content-Type: application/json
 
 {
-  "username": "bb",
+  "username": "ba",
   "email": "bb@.mail",
   "password": "abba"
 }
@@ -66,6 +66,6 @@ POST {{backend_HostAddress}}/api/login
 Content-Type: application/json
 
 {
-  "username": "bb",
+  "username": "ba",
   "password": "abba"
 }

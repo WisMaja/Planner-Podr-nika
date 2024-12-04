@@ -20,7 +20,7 @@ function LoginForm() {
         try {
             const response = await axios.post("http://localhost:5170/api/login", {
                 username: username,
-                passwordhash: password,
+                password: password,
             });
 
             // Jeśli żądanie się powiedzie
