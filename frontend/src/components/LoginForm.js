@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
-
-function LoginForm() {
+function LoginForm( {onLoginSuccess} ) {
     // Stan dla pól formularza
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
-    const [successMessage, setSuccessMessage] = useState(null);
+
+    const navigate = useNavigate(); // Hook do nawigacji
 
     // Obsługa zmiany danych w polach
     const handleUsernameChange = (e) => setUsername(e.target.value);
@@ -15,8 +16,7 @@ function LoginForm() {
 
     // Obsługa wysyłania formularza
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Zablokowanie odświeżenia strony
-
+        e.preventDefault(); // Zapobiega przeładowaniu strony
         try {
             const response = await axios.post("http://localhost:5170/api/login", {
                 username: username,
@@ -26,10 +26,12 @@ function LoginForm() {
             // Jeśli żądanie się powiedzie
             console.log("Axios Response:", response.data);
             setError(null);
-            setSuccessMessage(response.data.message); // Wyświetlenie wiadomości sukcesu
+
+            // Przekierowanie do strony Home po udanym logowaniu
+            navigate("/home");
+            // setSuccessMessage(response.data.message); // Wyświetlenie wiadomości sukcesu
         } catch (err) {
             // Jeśli żądanie zakończy się błędem
-            setSuccessMessage(null);
             setError(err.response ? err.response.data.message : err.message); // Wyświetlenie błędu
         }
     };
@@ -76,7 +78,7 @@ function LoginForm() {
             </form>
 
             {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
-            {successMessage && <p style={{ color: "green", marginTop: "10px" }}>{successMessage}</p>}
+            {/*{successMessage && <p style={{ color: "green", marginTop: "10px" }}>{successMessage}</p>}*/}
         </div>
     );
 }

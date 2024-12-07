@@ -1,13 +1,12 @@
 import React from "react";
-import LoginForm from "./LoginForm";
 
 function Home() {
     return (
-        <div>
-            <h1>Home Page</h1>
-            <LoginForm />
+        <div style={{ padding: "20px", textAlign: "center" }}>
+            <h1>Welcome to the Home Page</h1>
+            <p>You have successfully logged in!</p>
         </div>
-    )
+    );
 }
 
 export default Home;
